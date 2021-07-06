@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: sammpleconfig
 data:
-  mydata: d
+  mydata: abc
