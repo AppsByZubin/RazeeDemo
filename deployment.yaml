@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  namespace: gonamespace
+  labels:
+    app: webapp1
+  name: webapp1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      namespace: gonamespace
+      labels:
+        app: webapp1
+    spec:
+      containers:
+      - image: webapp1
+        name: webapp1
+        resources: {}
+        ports:
+          - containerPort: 8080
+status: {}
