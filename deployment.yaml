@@ -23,6 +23,7 @@ spec:
       - image: webapp1
         name: webapp1
         resources: {}
+        imagePullPolicy: Never
         ports:
           - containerPort: 8080
 status: {}
