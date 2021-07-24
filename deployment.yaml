@@ -7,7 +7,6 @@ metadata:
     app: gowebapp
   name: gowebapp-dep
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: gowebapp
