@@ -4,25 +4,26 @@ metadata:
   creationTimestamp: null
   namespace: gonamespace
   labels:
-    app: webapp1
-  name: webapp1
+    app: gowebapp
+  name: gowebapp-dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webapp1
+      app: gowebapp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       namespace: gonamespace
       labels:
-        app: webapp1
+        app: gowebapp
     spec:
       containers:
-      - image: webapp1
-        name: webapp1
+      - image: birdpedia-app
+        name: birdpedia-app
         resources: {}
+        imagePullPolicy: Never
         ports:
-          - containerPort: 8080
+          - containerPort: 8081
 status: {}
